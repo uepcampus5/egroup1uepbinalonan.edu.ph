@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+  <style>
+    .col-md-4 {
+  text-align: center;
+}
+
+/* Style the button */
+.footer-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.footer-link:hover {
+  background-color: #0056b3;
+  color: #ffffff;
+}
+    body {
+      font-family: Arial;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .form-container {
+      background: white;
+      padding: 20px;
+      max-width: 400px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2>Contact Form</h2>
+
+  <form>
+    
+    <label>Name:</label>
+    <input type="text" name="name" required>
+
+    
+    <label>Phone Number:</label>
+    <input type="tel" name="phone" required>
+
+    
+    <label>Address:</label>
+    <input type="text" name="address" required>
+
+    
+    <label>Department:</label>
+    <select name="department" required>
+      <option value="">-- Select Department --</option>
+      <option value="IT">IT Department</option>
+      <option value="Engineering">Engineering</option>
+      <option value="Business">Business Administration</option>
+      <option value="Education">Education</option>
+      <option value="Nursing">Nursing</option>
+      <option value="Registrar">Registrar</option>
+    </select>
+
+    
+    <label>Message / Concern:</label>
+    <textarea name="message" rows="4" required></textarea>
+
+    
+    <div class="col-md-4">
+    
+        <ul class="list-unstyled">
+          <a href="index.html" class="footer-link">Submit</a>
+        </ul>
+      </div>
+  </form>
+</div>
+
+</body>
+</html>

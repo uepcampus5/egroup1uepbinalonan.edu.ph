@@ -1,0 +1,80 @@
+body {
+  background: linear-gradient(115deg, red, white, gray);
+  min-height: 100vh;
+}
+.custom-nav {
+  background: transparent; /* navbar only */
+}
+
+.custom-nav .nav-link {
+  color: white;
+  background-color: rgba(13, 110, 253, 0.9); /* button stays visible */
+  margin: 0 5px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s;
+  text-align: center;
+  border: none;
+}
+
+.custom-nav .nav-link:hover {
+  background-color: #ff3b30; /* solid hover color */
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Slide-down animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Prevent content from hiding behind navbar */
+body {
+  padding-top: 80px;
+
+}
+.footer {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+/* Footer links */
+.footer-link {
+  color: #ddd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #ff3b30;
+  text-decoration: underline;
+}
+
+/* Text spacing */
+.footer h5 {
+  margin-bottom: 15px;
+}
+/* Box styling */
+.paragraph-box {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+}
+
+/* Logo styling */
+.uep-logo {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 4px solid white;
+  background: white;
+  padding: 5px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
